@@ -1,0 +1,84 @@
+<doctype html>
+<html>
+  <head>
+    
+    {%include 'bootstrap.html'%}
+   <style>
+     body{
+       background-color: #333; 
+       color: #fff;
+     }
+     .square-holder {
+       padding:30px;
+       border: 1px solid #cecece;
+       align-items: center;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom:20px;
+       background-color:#f1f1f1;
+       min-height:200px
+     }
+
+     .square-holder img {
+       max-width:100%;
+       filter: grayscale(100%);
+       transition: all 0.3s;
+     }
+
+     .square-holder:hover img{
+       filter:none;
+     }
+   </style>
+  </head>
+  <body>
+    <section class="section section-default mt-4 mb-4">
+    <div class="container">
+    <strong>
+    <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/python.png">
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/htmlpic.jpg" />
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/CSSpic.png" />
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/flaskpic.png"/>
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/fullstack.jpg" />
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/Cpic.png" />
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/Azurelogo.jpg" />
+    </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="square-holder">
+    <img alt="" src="static/SQLlogo.png" />
+    </div>
+    </div>
+    </div>
+    </strong>
+    </div>
+    </section>
+  </body>
+</html>
