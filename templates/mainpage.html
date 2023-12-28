@@ -87,7 +87,14 @@ Analysis and providing solutions for critical issues like updating functionaliti
   <div class="text-center mt-4">
       <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Hire Me</a>
 </div>
+<form name="naming" method='POST'>
+  <h2 class="mb-4" style="font-family:cursive; color:orange;">Please Enter Your Full Name...</h2>
+  <div class="form-outline mb-4">
+    <input type="text" name="fullname" class="form-control form-control-lg" placeholder="Enter Name" />
+  </div>
+  <button type="submit" class="mt-2 text-center btn btn-warning">Submit</button>
+</form>
+<div id="user-name-placeholder"></div>
   {%include 'footer.html'%}
 </body>
-
 </html>
