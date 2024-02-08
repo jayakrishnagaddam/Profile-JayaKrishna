@@ -1,46 +1,78 @@
-<dictype html>
-  <html>
-    <head>
-      <style>
-        body {
-          padding-top: 5px; /* Adjust the value based on your navbar height */
-          margin: 0;
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Demo</title>
+<style>
+  body {
+    padding-top: 70px; /* Adjust the value based on your navbar height */
+    margin: 0;
+  }
 
-        .navbar-nav .nav-link {
-          color: white !important;
-        }
-        .navbar-light .navbar-nav .nav-link {
-          color: white !important;
-        }
+  .navbar-nav .nav-link {
+    color: white !important; /* Change text color to black */
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white !important; /* Change text color to black */
+  }
 
-        .navbar-light .navbar-toggler-icon {
-          background-color: white !important;
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container mb-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+  .navbar-light .navbar-toggler-icon {
+    background-color: white !important; /* Change toggler background color to black */
+  }
+
+  .navbar {
+    background-color: black; /* Set navbar background color to white */
+  }
+</style>
+</head>
+<body>
+<div class="container mb-0">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="row">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item" >
+            <a class="navbar-brand nav-link inactive" style="position: absolute; left:20px; color: white;" aria-current="page"><b>JAYA KRISHNA-Portfolio</b></a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size:18px;" aria-current="page" href="https://1drv.ms/b/s!AjVIg8oOGcj7gv9M1nx378telYS0Uw?e=CZFWrd" target="_blank">Resume</a>
+          </li>
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" style="font-size:18px;" href="#About">About</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" style="font-size:18px;" href="#skills">Skills</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" style="font-size:18px;" href="#Education">Education</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" style="font-size:18px;" href="#project">Project Details</a>
+          </li>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link inactive" style="font-size:23px;"aria-current="page"><b>JAYA KRISHNA</b></a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link active" style="font-size:21px;" aria-current="page" href="https://1drv.ms/b/s!AjVIg8oOGcj7gv9M1nx378telYS0Uw?e=CZFWrd" target="_blank">My Resume</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        </ul>
+        </div>
       </div>
-    </body>
-  </html>
+    </div>
+  </nav>
+</div>
+</body>
+</html>
