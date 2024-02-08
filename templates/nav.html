@@ -9,17 +9,19 @@
     padding-top: 70px; /* Adjust the value based on your navbar height */
     margin: 0;
   }
+    .form-check-input {
+        cursor: pointer;
+    }
+    .navbar-nav .nav-link {
+        color: antiquewhite !important; /* Change text color to black */
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: antiquewhite !important; /* Change text color to black */
+    }
 
-  .navbar-nav .nav-link {
-    color: white !important; /* Change text color to black */
-  }
-  .navbar-light .navbar-nav .nav-link {
-    color: white !important; /* Change text color to black */
-  }
-
-  .navbar-light .navbar-toggler-icon {
-    background-color: white !important; /* Change toggler background color to black */
-  }
+    .navbar-light .navbar-toggler-icon {
+        background-color: antiquewhite !important; /* Change toggler background color to black */
+    }
 
   .navbar {
     background-color: black; /* Set navbar background color to white */
@@ -45,29 +47,46 @@
 
 
           <li class="nav-item">
-            <a class="nav-link active" style="font-size:18px;" aria-current="page" href="https://1drv.ms/b/s!AjVIg8oOGcj7gv9M1nx378telYS0Uw?e=CZFWrd" target="_blank">Resume</a>
+            <a class="nav-link active" style="font-size: 18px;color: antiquewhite;" aria-current="page" href="https://1drv.ms/b/s!AjVIg8oOGcj7gv9M1nx378telYS0Uw?e=CZFWrd" target="_blank">Resume</a>
           </li>
          
           
           <li class="nav-item">
-            <a class="nav-link" style="font-size:18px;" href="#About">About</a>
+            <a class="nav-link" style="font-size: 18px; color: antiquewhite;" href="#About">About</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" style="font-size:18px;" href="#skills">Skills</a>
+            <a class="nav-link" style="font-size: 18px; color: antiquewhite;" href="#skills">Skills</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" style="font-size:18px;" href="#Education">Education</a>
+            <a class="nav-link" style="font-size: 18px; color: antiquewhite;" href="#Education">Education</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" style="font-size:18px;" href="#project">Project Details</a>
+            <a class="nav-link" style="font-size: 18px; color: antiquewhite;" href="#project">Project Details</a>
           </li>
             
+          <li class="nav-item mt-2" style="position:absolute; right:50px;">
+
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                  <label class="form-check-label" style="font-size:18px; color:antiquewhite;" for="flexSwitchCheckChecked"> Weekend Mode 😉 </label>
+              </div>
+          </li>
+                  <script>
+    document.getElementById('flexSwitchCheckChecked').addEventListener('change', function () {
+        if (this.checked) {
+            window.location.href = '/weekend';
+        }
+    });
+                  </script>
+              
+          
+
         </ul>
         </div>
       </div>
