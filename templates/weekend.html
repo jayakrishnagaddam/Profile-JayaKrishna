@@ -1,11 +1,68 @@
-<doctype html4f>
-    <html4f>
-        <head>
-            <title>Me on Weekend </title>
-        </head>
-        <body>
-
-        </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekend</title>
+    {%include 'bootstrap.html'%}
+    <style>
         
-    </html4f>
-</doctype>
+        .row {
+            display: block;
+            clear: both;
+            overflow: hidden;
+        }
+
+        
+        .col {
+            width: 50%;
+            float: left;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container" style="background-color: black;">
+    
+    <div class="row">
+        <div class="col">
+            <img src="static\weekendpic.jpeg" alt="Me on Weekend">
+        </div>
+        <div class="col">
+            <p class="lead text-center" style="font-size:40px; color: orange;">Jaya Krishna on Weekends 😊</p>
+            <h3 class="lead" style="font-size:20px; color:orange;">Beach Exploration and Environmental Awareness 🏖️</h3>
+
+             <p class="lead" style="color: antiquewhite;font-size:18px;"> 👉 On weekends, I combine my love for the outdoors with my passion for environmental stewardship. 
+             I often visit the beach to appreciate nature's beauty and engage in activities like coastal cleanup initiatives. 
+             This not only allows me to unwind and recharge but also reinforces my commitment to sustainability and preserving our natural resources.</p>
+
+            <h3 class="lead" style="color:orange; font-size:20px;">Film Analysis and Critical Thinking 🎬</h3>
+
+            <p class="lead" style="color: antiquewhite;font-size:18px;"> 👉 As a keen observer and analytical thinker, I devote time to watching movies on weekends. However, it's not merely entertainment; it's an opportunity for me to enhance my critical thinking skills. 
+            I delve into the intricate details of each film, analyzing the storyline, character development, and underlying themes. 
+            This practice cultivates my ability to approach engineering challenges from diverse perspectives and devise innovative solutions.</p>
+
+            <h3 class="leadr" style="color: orange;font-size:20px;">Personal Wellness and Work-Life Balance 🧘‍♂️</h3>
+<p class="lead " style="color: antiquewhite;font-size:18px;">
+    👉  Amidst my professional endeavors, I prioritize personal wellness and maintaining a healthy work-life balance. 
+            Whether it's engaging in recreational activities, spending quality time with loved ones, or pursuing creative hobbies, 
+            I ensure that weekends serve as a rejuvenating break from the demands of work. By nurturing my well-being, 
+            I enhance my productivity and effectiveness as an engineering professional.
+</p>
+
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Contact Me</a>
+        </div>
+    </div>
+
+   
+</body>
+</html>
