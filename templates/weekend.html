@@ -4,6 +4,10 @@
     <title>Weekend</title>
     {%include 'bootstrap.html'%}
     <style>
+        body {
+    padding-top: 50px; /* Adjust the value based on your navbar height */
+    margin: 0;
+  }
         
         .row {
             display: block;
@@ -29,14 +33,19 @@
         }
     </style>
 </head>
-<body class="container" style="background-color: black;">
+<body  style="background-color: black;">
+    <nav class="fixed-top mb-4" style="background-color: black;">
+        <ul>
+            <li class="nav item mt-2" style="font-size:24px; color: orange;"> Weekend Mode</li>
+        </ul>
     
+    </nav>
     <div class="row">
         <div class="col">
             <img src="static\weekendpic.jpeg" alt="Me on Weekend">
         </div>
         <div class="col">
-            <p class="lead text-center" style="font-size:40px; color: orange;">Jaya Krishna on Weekends 😊</p>
+            <p class="lead text-center" style="font-size:40px; color: orange;">Me on Weekends 😊</p>
             <h3 class="lead" style="font-size:20px; color:orange;">Beach Exploration and Environmental Awareness 🏖️</h3>
 
              <p class="lead" style="color: antiquewhite;font-size:18px;"> 👉 On weekends, I combine my love for the outdoors with my passion for environmental stewardship. 
@@ -57,9 +66,11 @@
             I enhance my productivity and effectiveness as an engineering professional.
 </p>
 
-        </div>
+        </div class="mt-4">
+        <div>
         <div class="text-center mt-4">
             <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Contact Me</a>
+        </div>
         </div>
     </div>
 
