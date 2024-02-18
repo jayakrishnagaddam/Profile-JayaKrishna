@@ -2,51 +2,65 @@
 <html>
 
 <head>
-  <title>Jaya Krishna</title>
-  {% include 'bootstrap.html' %}
-  <style>
-    body {
-      
-      margin: 0;
-      padding: 0;
-      background-color: #333; 
-      color: #fff;
-    }
+    <title>Jaya Krishna</title>
+    {% include 'bootstrap.html' %}
+    <style>
+        body {
+            background: url('static/background.jpg')!important;
+            background-size: cover;
+            margin: 0;
+            padding: 0; 
+            color: #fff;
+        }
+        .overlay-container {
+          text-align: center;
+          color: white;
+        }
+        .background {
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .overlay-text {
-      position: absolute;
-      top: 30%;
-      font-family: 'Roboto', sans-serif;;
-      left: 25%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 32px;
-      text-align: center;
-    }
-  </style>
-  {%include 'nav.html'%}
+        .overlay-text {
+            position: absolute;
+            font-family: 'Roboto', sans-serif;
+            left: 30%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 32px;
+            text-align: center;
+        }
+    </style>
+    {% include 'nav.html'%}
 </head>
 
 <body class="container">
+    
+
     <img src="static/Profile Image WD.jpeg" class="img-fluid" alt="My Image">
-    <div class="overlay-text" style="color:yellow;top:30%; left:36%;">
+    <div class="overlay-text" style="color: yellow; top: 30%;">
         <b>I AM JAYA KRISHNA.</b>
     </div>
 
-    <div class="overlay-text" style="color:white;top:37%; left:36%;">
+    <div class="overlay-text" style="top: 37%;">
         <b>PYTHON FULL STACK DEVELOPER & </b>
     </div>
-    <div class="overlay-text" style="color:white;top:44%; left:34%;">
-        <b>TECH ENTHISIAST...</b>
+    <div class="overlay-text" style="top: 44%;">
+        <b>TECH ENTHUSIAST...</b>
     </div>
-    <div class="overlay-text" style="color:white;top:52%; left:34%;">
+    <div class="overlay-text" style="top: 52%;">
         <a href="{{url_for('contact')}}" class="btn btn-dark btn-lg">Hire Me</a>
     </div>
+
     <h1 class=" mt-4 mb-4 text-center" style="font-family:cursive; color:orange;">Career Objective </h1>
     <p class="lead" style="color:antiquewhite;">
         To secure a challenging position where I can effectively contribute my skills. In addition, the scope for personal growth in terms of acquiring new skills and handling challenging tasks are also very critical in my choice of a career and as well as company’s growth.
@@ -61,6 +75,7 @@
           Besides my technical skills, I am multilingual, fluent in Telugu, Hindi, and English. This linguistic versatility enables me to effectively communicate and collaborate with diverse teams and stakeholders.Whether it's developing efficient algorithms, collaborating on a team project, or finding creative solutions to real-world challenges, I thrive in dynamic and collaborative environments. I am excited about the possibilities that technology presents and eager to contribute my skills to meaningful projects.As I embark on the next phase of my journey, I am open to new opportunities that allow me to apply my knowledge and skills in innovative ways. If you're looking for a dedicated and versatile engineer with a passion for problem-solving, let's connect!
       </p>
     </div>
+    
     <div id="skills">
         <h1 class=" mt-4 mb-2 text-center" style="font-family:cursive; color:orange;">My Skills</h1>
         {%include 'skills.html'%}
@@ -129,4 +144,5 @@
 
     {%include 'footer.html'%}
 </body>
+
 </html>
