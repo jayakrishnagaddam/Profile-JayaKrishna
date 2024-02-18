@@ -29,7 +29,7 @@
             height: auto;
             display: block;
         }
-
+        
         .overlay-text {
             position: absolute;
             font-family: 'Roboto', sans-serif;
@@ -58,7 +58,7 @@
         <b>TECH ENTHUSIAST...</b>
     </div>
     <div class="overlay-text" style="top: 52%;">
-        <a href="{{url_for('contact')}}" class="btn btn-dark btn-lg">Hire Me</a>
+        <a href="{{url_for('contact')}}" class="btn btn-dark btn-lg">Contact Me</a>
     </div>
 
     <h1 class=" mt-4 mb-4 text-center" style="font-family:cursive; color:orange;">Career Objective </h1>
@@ -96,7 +96,8 @@
     <p class="lead" style="font-size: 20px; color: antiquewhite;"><b>Location : </b>KL University</p>
     <p class="lead" style="font-size: 20px; color: antiquewhite;"><b>Mode : </b>On Campus</p>
     <p class="lead" style="font-size: 20px; color: antiquewhite;"><b>Type  : </b>Technical</p>
-
+    
+    
     <div id="project">
         <h1 class=" mt-4 mb-4 text-center" style="font-family:cursive; color:orange;">Project Details</h1>
 
@@ -137,12 +138,21 @@
         <h3 class="lead" style="color: antiquewhite;"> Join me in the mission to combat deepfake threats with DeepSheild - where technology meets trust.</h3>
     </div>
     </p>
+    
     <div class="text-center mt-4">
-        <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Hire Me</a>
+        <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Contact Me</a>
     </div>
     <div id="user-name-placeholder"></div>
 
+    <div id="tests">
+        <h1 class="mt-4 mb-2 text-center" style="font-family:cursive; color:orange;">Testimonials</h1>
+        {%include 'testimonials.html'%}
+    </div>
+<div>
+
     {%include 'footer.html'%}
+</div>
+    
 </body>
 
 </html>
