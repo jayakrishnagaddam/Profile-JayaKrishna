@@ -33,7 +33,7 @@
         .overlay-text {
             position: absolute;
             font-family: 'Roboto', sans-serif;
-            left: 30%;
+            left: 35%;
             transform: translateX(-50%);
             color: white;
             font-size: 32px;
@@ -48,7 +48,7 @@
 
     <img src="static/Profile Image WD.jpeg" class="img-fluid" alt="My Image">
     <div class="overlay-text" style="color: yellow; top: 30%;">
-        <b>I AM JAYA KRISHNA.</b>
+        <b>Hello, I'm Jaya Krishna</b>
     </div>
 
     <div class="overlay-text" style="top: 37%;">
@@ -97,7 +97,6 @@
     <p class="lead" style="font-size: 20px; color: antiquewhite;"><b>Mode : </b>On Campus</p>
     <p class="lead" style="font-size: 20px; color: antiquewhite;"><b>Type  : </b>Technical</p>
     
-    
     <div id="project">
         <h1 class=" mt-4 mb-4 text-center" style="font-family:cursive; color:orange;">Project Details</h1>
 
@@ -139,17 +138,18 @@
     </div>
     </p>
     
-    <div class="text-center mt-4">
-        <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Contact Me</a>
-    </div>
-    <div id="user-name-placeholder"></div>
 
-    <div id="tests">
+    <div class="mt-4"id="tests">
         <h1 class="mt-4 mb-2 text-center" style="font-family:cursive; color:orange;">Testimonials</h1>
         {%include 'testimonials.html'%}
     </div>
-<div>
 
+    
+    <div class="text-center mt-4">
+        <a href="{{url_for('contact')}}" class="btn btn-warning btn-lg">Contact Me</a>
+    </div>
+
+<div>
     {%include 'footer.html'%}
 </div>
     
