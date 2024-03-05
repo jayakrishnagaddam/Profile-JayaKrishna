@@ -6,6 +6,9 @@ app = Flask(__name__)
 def function():
   return render_template('mainpage.html')
 
+@app.route('/mainpage')
+def mainpage():
+  return render_template('mainpage.html')
 
 @app.route('/contact')
 def contact():
