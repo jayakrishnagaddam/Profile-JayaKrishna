@@ -10,6 +10,10 @@ def function():
 def mainpage():
   return render_template('mainpage.html')
 
+
+@app.route('/projects')
+def projects():
+  return render_template('projects.html')
 @app.route('/contact')
 def contact():
   return render_template('contact.html')
